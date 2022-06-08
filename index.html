@@ -17,7 +17,7 @@
 	<main>
 		<section id="textoIngresado">
 			<h2>Ingrese Texto para encriptar abajo</h2>
-			<textarea type="text" class="inputTexto" placeholder="ingrese texto aqui" cols="50" rows="30">
+			<textarea focus type="text" class="inputTexto" cols="50" rows="30">
 			</textarea>
 			<h6>solo letras minusculas y sin acento</h6>
 			
@@ -28,9 +28,11 @@
 
 		</section>
 		<section id="textoResultado">
-			<textarea type="text" class="resulTexto" cols="60" rows="30">
-				
+			<textarea type="text" id="resultado" class="resulTexto">
+
 			</textarea>
+			<button class="btonCo" type="button" onclick="copiar('resultado')">copiar</button>
+			<button class="btonCo" type="button" onclick="cortar('resultado')">cortar</button>
 		</section>
 			
 	</main>
@@ -38,7 +40,8 @@
 	<footer>
 		echo con pasion by: AnDreS AcoStA 
 	</footer>
-	<script src="script.js"></script>
+	<script src="botonesEncriptarDesencriptar.js"></script>
+	<script type="text/javascript" src="botonCopiarCortar.js"></script>
 
 </body>
 </html>

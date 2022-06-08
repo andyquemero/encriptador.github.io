@@ -23,6 +23,10 @@ main{
 
 }
 
+textarea{
+	resize: none;
+}
+
 #textoIngresado{
 	margin-top: 1em;
 	margin-left: 2%;
@@ -34,12 +38,27 @@ main{
 	margin-left: 30%;
 }
 
+.resulTexto{
+
+	width: 230px;
+	height: 90%;
+	border: 1px solid black;
+}
+
 button{
 	background: blue;
 	border-radius: 5px;
 	color: white;
 	width: 10em;
 }
+
+.btonCo{
+	background: green;
+	margin-top: 5%;
+	width: 10em;
+}
+
+
 
 footer{
 	background: blueviolet;
