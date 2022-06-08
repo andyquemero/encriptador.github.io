@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background: blueviolet;
+	padding: auto;
+	text-align: center;
+	margin: auto;
+	width: 30%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+
+}
+
+#textoIngresado{
+	margin-top: 1em;
+	margin-left: 2%;
+}
+
+#textoResultado{
+	position: relative;
+	margin-top: 2.2em;
+	margin-left: 30%;
+}
+
+button{
+	background: blue;
+	border-radius: 5px;
+	color: white;
+	width: 10em;
+}
+
+footer{
+	background: blueviolet;
+	text-align: center;
+	margin: auto;
+	width: 30%;
+}

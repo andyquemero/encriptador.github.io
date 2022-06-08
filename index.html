@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> encriptador de texto </title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<title>Encriptador de texto </title>
+</head>
+<body>
+	<header>
+		<div class="titulo">
+			<h1>Encriptador de texto</h1>
+		</div>	
+	</header>
+	<main>
+		<section id="textoIngresado">
+			<h2>Ingrese Texto para encriptar abajo</h2>
+			<textarea type="text" class="inputTexto" placeholder="ingrese texto aqui" cols="50" rows="30">
+			</textarea>
+			<h6>solo letras minusculas y sin acento</h6>
+			
+			<div>
+				<button type="button" onclick="btonEncriptar()">encriptar</button>
+				<button type="button" onclick="btonDesencriptar()">desencriptar</button>
+			</div>
+
+		</section>
+		<section id="textoResultado">
+			<textarea type="text" class="resulTexto" cols="60" rows="30">
+				
+			</textarea>
+		</section>
+			
+	</main>
+	
+	<footer>
+		echo con pasion by: AnDreS AcoStA 
+	</footer>
+	<script src="script.js"></script>
+
+</body>
+</html>
