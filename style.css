@@ -5,10 +5,9 @@
 
 header{
 	background: blueviolet;
-	padding: auto;
 	text-align: center;
-	margin: auto;
-	width: 30%;
+	padding: 10px;
+	color: white;
 }
 
 body{
@@ -20,6 +19,7 @@ body{
 main{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 
 }
 
@@ -32,16 +32,38 @@ textarea{
 	margin-left: 2%;
 }
 
+#textoIngresado .txtIngre{
+	text-align: center;
+
+}
+
+#textoIngresado .botonesTxt{
+	display: flex;
+	justify-content: space-around;
+}
+
 #textoResultado{
 	position: relative;
-	margin-top: 2.2em;
-	margin-left: 30%;
+	margin-top: 1em;
+}
+
+#textoResultado .resultado{
+	text-align: center;
+}
+
+.resultado .tituloCajaEncrip{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2%;
+
+}
+
+.resultado .tituloCajaEncrip img{
+	width: 20px;
+	height: 20px;
 }
 
 .resulTexto{
-
-	width: 230px;
-	height: 90%;
 	border: 1px solid black;
 }
 
@@ -50,19 +72,37 @@ button{
 	border-radius: 5px;
 	color: white;
 	width: 10em;
+	margin-top: 1%;
 }
 
-.btonCo{
+.botonesEncrip{
+	display: flex;
+	justify-content: space-around;
+}
+
+.botonesEncrip .btonCo{
+	justify-content: space-around;
 	background: green;
-	margin-top: 5%;
+	margin-top: 4%;
 	width: 10em;
 }
-
 
 
 footer{
 	background: blueviolet;
 	text-align: center;
 	margin: auto;
-	width: 30%;
+	margin-top: 2%;
+	color: white;
+	width: 100%;
+	padding: 10px;
+}
+
+.visible{
+	display: block;
+}
+
+button:hover{
+	color: gold;
+	font-size: 14px;
 }

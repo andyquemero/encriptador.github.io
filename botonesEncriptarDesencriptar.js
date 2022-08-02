@@ -1,16 +1,21 @@
 const tIngresado = document.querySelector(".inputTexto");
 const tResultado = document.querySelector(".resulTexto");
-
+document.getElementById('cA').style.display= "none";
+document.getElementById('cC').style.display= "none";
 
 
 function btonEncriptar(){
 	const textoEncriptado = encriptar(tIngresado.value);
 	tResultado.innerText = textoEncriptado;
+	document.getElementById('cC').style.display= "block";
+	document.getElementById('cA').style.display= "none";
 } 
 
 function btonDesencriptar(){
 	const textoDesencriptar = desencriptar(tIngresado.value);
 	tResultado.innerText = textoDesencriptar;
+	document.getElementById('cA').style.display= "block";
+	document.getElementById('cC').style.display= "none";
 }
 
 function encriptar(texto){

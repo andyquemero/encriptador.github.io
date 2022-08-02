@@ -16,29 +16,40 @@
 	</header>
 	<main>
 		<section id="textoIngresado">
-			<h2>Ingrese Texto para encriptar abajo</h2>
-			<textarea focus type="text" class="inputTexto" cols="50" rows="30">
-			</textarea>
-			<h6>solo letras minusculas y sin acento</h6>
+			<div class="txtIngre">	
+				<h2>Ingrese Texto para encriptar abajo</h2>
+				<textarea focus type="text" class="inputTexto" cols="50" rows="30">
+				</textarea>
+				<h6>solo letras minusculas y sin acento</h6>
+			</div>
 			
-			<div>
+			<div class="botonesTxt">
 				<button type="button" onclick="btonEncriptar()">encriptar</button>
 				<button type="button" onclick="btonDesencriptar()">desencriptar</button>
 			</div>
 
 		</section>
 		<section id="textoResultado">
-			<textarea type="text" id="resultado" class="resulTexto">
-
-			</textarea>
-			<button class="btonCo" type="button" onclick="copiar('resultado')">copiar</button>
-			<button class="btonCo" type="button" onclick="cortar('resultado')">cortar</button>
+			<div class="resultado">
+				<div class="tituloCajaEncrip">
+					<p id="tituTE">Texto Encriptado</p>
+					<img  id="cC" src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png">
+					<img  id="cA" src="https://cdn-icons-png.flaticon.com/512/193/193220.png">
+				</div>
+				<textarea type="text" id="resultado" class="resulTexto" cols="50" rows="20">
+				</textarea>
+			</div>
+			<div class="botonesEncrip">
+				
+				<button class="btonCo" type="button" onclick="copiar('resultado')">copiar</button>
+				<button class="btonCo" type="button" onclick="cortar('resultado')">cortar</button>
+			</div>
 		</section>
 			
 	</main>
 	
 	<footer>
-		echo con pasion by: AnDreS AcoStA 
+		<p>build with love by AndresAcosta 🍀  💪</p>
 	</footer>
 	<script src="botonesEncriptarDesencriptar.js"></script>
 	<script type="text/javascript" src="botonCopiarCortar.js"></script>
